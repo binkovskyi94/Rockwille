@@ -1,0 +1,48 @@
+@font-face {
+    font-family: var(--base-font);
+    font-weight: var(--global--normal--FontWeight);
+    font-style: normal;
+    src: local('Lato Light'), local('Lato-Light'),
+        url('../fonts/Lato-Light.woff2') format('woff2'),
+        url('../fonts/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: var(--base-font);
+    font-weight: var(--global--regular--FontWeight);
+    font-style: normal;
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: var(--base-font);
+    font-weight: var( --global--bold--FontWeight);
+    font-style: normal;
+    src: local('Lato Bold'), local('Lato-Bold'),
+        url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: var(--base-font);
+    font-weight: var( --global--black--FontWeight);
+    font-style: normal;
+    src: local('Lato Black'), local('Lato-Black'),
+        url('../fonts/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype');
+    font-display: swap;
+}
+
+
+
+
+

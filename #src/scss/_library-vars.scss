@@ -1,0 +1,111 @@
+
+// Global variables follow the formula:
+// `--global--concept--modifier--state--PropertyCamelCase`
+
+// Подключение шрифтов
+// Google Fonts
+// http://https://fonts.google.com//
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+// Локальные шрифты
+// @import 'local-fonts';
+
+:root {
+  // Ссылки
+  --global--link--Color: var(--global--primary--Color);
+  --global--link--TextDecoration: none;
+  --global--link--hover-Color: #0088ce;
+  --global--link--hover--TextDecoration: underline;
+  
+  // Границы
+  --global--orange--BorderColor: #fa7f6b;
+  --global--BorderWidth: 4px solid #000000;
+  --global--BorderWidth: 4px solid #ffffff;
+  // --global--BorderWidth: 1px;
+  // --global--dark--BorderColor: #bbb;
+  // --global--light--BorderColor: #d1d1d1;
+
+  // Отступы
+  // https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
+  --global--spacer--xxs: 0.125rem;
+  --global--spacer--xs: 0.25rem;
+  --global--spacer--sm: 0.5rem;
+  --global--spacer--md: 1rem;
+  --global--spacer--lg: 2rem;
+  --global--spacer--xl: 3rem;
+
+  // Цвет
+  
+  //Специальные цвет
+  --global--primary--Color:        linear-gradient(to top, #5600ea 0%, #8a00ff 100%);
+  --global--extra-primary--Color:        linear-gradient(to right, #5328a1 0%, #782e0a 100%);
+  --global--orange-primary--Color:    #f97e6b;
+  // --global--primary--Color:       #39a5dc;
+  // --global--primary--dark--Color: #0088ce;
+  
+  // --global--danger--Color:       #c00;
+  // --global--danger--dark--Color: #a30000;
+  
+  // --global--warning--Color:       #ec7a08;
+  // --global--warning--dark--Color: #b35c00;
+
+  // Цвет текста
+  --global--white--Color:      #ffffff;
+  --global--extra--Color:      linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
+  // --global--dark--Color:      #292e34;
+  // --global--dark--off--Color: #8b8d8f;
+  // --global--light--Color:     #fafafa;
+  // --global--light--off-Color: #d1d1d1;
+
+  // Фоновый цвет
+  --global--dark--BackgroundColor:      #030203;
+  // --global--light--BackgroundColor:      #fafafa;
+  // --global--light--off--BackgroundColor: #ededed;
+
+  // --global--dark--BackgroundColor:      #292e34;
+  // --global--dark--off--BackgroundColor: #393f44;
+
+  // Отправные точки(breakpoint)
+  // http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
+  --global--breakpoint--xs: 0;
+  --global--breakpoint--sm: 24em;
+  --global--breakpoint--md: 50;
+  --global--breakpoint--lg: 50em;
+  --global--breakpoint--xl: 73em;
+
+  // Шрифты
+  // Семейство шрифтов
+  --base-font: 'Lato';
+
+  // Системные шрифты
+  // @import 'system-fonts';
+  // --global--sans-serif--FontFamily: system;
+
+  // Размер шрифта
+  --global--hero-title--FontSize:       3rem;
+  --global--main-title--FontSize:       2rem;
+  --global--secondary--title-FontSize:  1.5rem;
+  --global--sub-title--FontSize:        1.2rem;
+  --global--body--FontSize:             1rem;
+  --global--caption--FontSize:          0.8rem;
+
+  // Высота строки
+  --global--sm--LineHeight: 1.1;
+  --global--md--LineHeight: 1.5;
+  --global--lg--LineHeight: 2;
+
+  // Начертание шрифта
+  --global--light--FontWeight: 300;
+  --global--regular--FontWeight: 400;
+  --global--medium--FontWeight: 500;
+  --global--bold--FontWeight: 700;
+  --global--black--FontWeight: 900;
+}
+
+//ПРИМЕР
+// .some {
+//   font-family: var(--base-font);
+//   color: var( --global--danger--Color);
+//   background: var(--global--light--BackgroundColor);
+//   font-size: var(--global--body--FontSize);
+//   font-weight: var(--global--light--FontWeight);
+// }

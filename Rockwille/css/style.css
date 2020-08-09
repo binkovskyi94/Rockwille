@@ -1,0 +1,191 @@
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--normal--FontWeight);
+  font-style: normal;
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--regular--FontWeight);
+  font-style: normal;
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--bold--FontWeight);
+  font-style: normal;
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--black--FontWeight);
+  font-style: normal;
+  src: local("Lato Black"), local("Lato-Black"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+aside, nav, footer, header, section {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+  min-width: 320px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: var(--base-font);
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: var(--base-font);
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ul, ol, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus, input:focus {
+  outline: transparent;
+}
+
+:root {
+  --global--link--Color: var(--global--primary--Color);
+  --global--link--TextDecoration: none;
+  --global--link--hover-Color: #0088ce;
+  --global--link--hover--TextDecoration: underline;
+  --global--orange--BorderColor: #fa7f6b;
+  --global--BorderWidth: 4px solid #000000;
+  --global--BorderWidth: 4px solid #ffffff;
+  --global--spacer--xxs: 0.125rem;
+  --global--spacer--xs: 0.25rem;
+  --global--spacer--sm: 0.5rem;
+  --global--spacer--md: 1rem;
+  --global--spacer--lg: 2rem;
+  --global--spacer--xl: 3rem;
+  --global--primary--Color:        linear-gradient(to top, #5600ea 0%, #8a00ff 100%);
+  --global--extra-primary--Color:        linear-gradient(to right, #5328a1 0%, #782e0a 100%);
+  --global--orange-primary--Color:    #f97e6b;
+  --global--white--Color:      #ffffff;
+  --global--extra--Color:      linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
+  --global--dark--BackgroundColor:      #030203;
+  --global--breakpoint--xs: 0;
+  --global--breakpoint--sm: 24em;
+  --global--breakpoint--md: 50;
+  --global--breakpoint--lg: 50em;
+  --global--breakpoint--xl: 73em;
+  --base-font: 'Lato';
+  --global--hero-title--FontSize:       3rem;
+  --global--main-title--FontSize:       2rem;
+  --global--secondary--title-FontSize:  1.5rem;
+  --global--sub-title--FontSize:        1.2rem;
+  --global--body--FontSize:             1rem;
+  --global--caption--FontSize:          0.8rem;
+  --global--sm--LineHeight: 1.1;
+  --global--md--LineHeight: 1.5;
+  --global--lg--LineHeight: 2;
+  --global--light--FontWeight: 300;
+  --global--regular--FontWeight: 400;
+  --global--medium--FontWeight: 500;
+  --global--bold--FontWeight: 700;
+  --global--black--FontWeight: 900;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--normal--FontWeight);
+  font-style: normal;
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--regular--FontWeight);
+  font-style: normal;
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--bold--FontWeight);
+  font-style: normal;
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--base-font);
+  font-weight: var(--global--black--FontWeight);
+  font-style: normal;
+  src: local("Lato Black"), local("Lato-Black"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+}
