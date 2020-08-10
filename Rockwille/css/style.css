@@ -2,7 +2,7 @@
   font-family: var(--base-font);
   font-weight: var(--global--normal--FontWeight);
   font-style: normal;
-  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype");
+  src: local("Lato Light"), local("Lato-Light"), url("fonts/Lato-Light.woff2") format("woff2"), url("fonts/Lato-Light.woff") format("woff"), url("fonts/Lato-Light.eot?#iefix") format("embedded-opentype");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
   font-style: normal;
-  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype");
+  src: local("Lato Regular"), local("Lato-Regular"), url("fonts/Lato-Regular.woff2") format("woff2"), url("fonts/Lato-Regular.woff") format("woff"), url("fonts/Lato-Regular.eot?#iefix") format("embedded-opentype");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: var(--base-font);
   font-weight: var(--global--bold--FontWeight);
   font-style: normal;
-  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype");
+  src: local("Lato Bold"), local("Lato-Bold"), url("fonts/Lato-Bold.woff2") format("woff2"), url("fonts/Lato-Bold.woff") format("woff"), url("fonts/Lato-Bold.eot?#iefix") format("embedded-opentype");
   font-display: swap;
 }
 
@@ -26,8 +26,93 @@
   font-family: var(--base-font);
   font-weight: var(--global--black--FontWeight);
   font-style: normal;
-  src: local("Lato Black"), local("Lato-Black"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype");
+  src: local("Lato Black"), local("Lato-Black"), url("fonts/Lato-Black.woff2") format("woff2"), url("fonts/Lato-Black.woff") format("woff"), url("fonts/Lato-Black.eot?#iefix") format("embedded-opentype");
   font-display: swap;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?qlmhwz");
+  src: url("../fonts/icomoon.eot?qlmhwz#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?qlmhwz") format("truetype"), url("../fonts/icomoon.woff?qlmhwz") format("woff"), url("../fonts/icomoon.svg?qlmhwz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-marker:before {
+  content: "\f041";
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+
+.icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-facebook-official:before {
+  content: "\f230";
+}
+
+.icon-user-o:before {
+  content: "\f2c0";
+}
+
+:root {
+  --global--link--Color: var(--global--primary--Color);
+  --global--link--TextDecoration: none;
+  --global--link--hover-Color: #0088ce;
+  --global--link--hover--TextDecoration: underline;
+  --global--orange--BorderColor: #fa7f6b;
+  --global--BorderWidth: 4px solid #000000;
+  --global--BorderWidth: 4px solid #ffffff;
+  --global--spacer--xxs: 0.125rem;
+  --global--spacer--xs: 0.25rem;
+  --global--spacer--sm: 0.5rem;
+  --global--spacer--md: 1rem;
+  --global--spacer--lg: 2rem;
+  --global--spacer--xl: 3rem;
+  --global--primary--Color:        linear-gradient(to top, #5600ea 0%, #8a00ff 100%);
+  --global--extra-primary--Color:        linear-gradient(to right, #5328a1 0%, #782e0a 100%);
+  --global--orange-primary--Color:    #f97e6b;
+  --global--white--Color:      #ffffff;
+  --global--extra--Color:      linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
+  --global--dark--BackgroundColor:      #030203;
+  --global--breakpoint--xs: 0;
+  --global--breakpoint--sm: 24em;
+  --global--breakpoint--md: 50;
+  --global--breakpoint--lg: 50em;
+  --global--breakpoint--xl: 73em;
+  --base-font: 'Lato-Regular';
+  --base-font-black: 'Lato-Black';
+  --global--caption--FontSize:          14px;
+  --global--sm--LineHeight: 1.1;
+  --global--md--LineHeight: 1.5;
+  --global--lg--LineHeight: 2;
+  --global--light--FontWeight: 300;
+  --global--regular--FontWeight: 400;
+  --global--medium--FontWeight: 500;
+  --global--bold--FontWeight: 700;
+  --global--black--FontWeight: 900;
 }
 
 * {
@@ -67,7 +152,7 @@ html {
 body {
   line-height: 1;
   font-size: 14px;
-  font-family: var(--base-font);
+  font-family: Arial, Helvetica, sans-serif;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -116,76 +201,158 @@ button:focus, input:focus {
   outline: transparent;
 }
 
-:root {
-  --global--link--Color: var(--global--primary--Color);
-  --global--link--TextDecoration: none;
-  --global--link--hover-Color: #0088ce;
-  --global--link--hover--TextDecoration: underline;
-  --global--orange--BorderColor: #fa7f6b;
-  --global--BorderWidth: 4px solid #000000;
-  --global--BorderWidth: 4px solid #ffffff;
-  --global--spacer--xxs: 0.125rem;
-  --global--spacer--xs: 0.25rem;
-  --global--spacer--sm: 0.5rem;
-  --global--spacer--md: 1rem;
-  --global--spacer--lg: 2rem;
-  --global--spacer--xl: 3rem;
-  --global--primary--Color:        linear-gradient(to top, #5600ea 0%, #8a00ff 100%);
-  --global--extra-primary--Color:        linear-gradient(to right, #5328a1 0%, #782e0a 100%);
-  --global--orange-primary--Color:    #f97e6b;
-  --global--white--Color:      #ffffff;
-  --global--extra--Color:      linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
-  --global--dark--BackgroundColor:      #030203;
-  --global--breakpoint--xs: 0;
-  --global--breakpoint--sm: 24em;
-  --global--breakpoint--md: 50;
-  --global--breakpoint--lg: 50em;
-  --global--breakpoint--xl: 73em;
-  --base-font: 'Lato';
-  --global--hero-title--FontSize:       3rem;
-  --global--main-title--FontSize:       2rem;
-  --global--secondary--title-FontSize:  1.5rem;
-  --global--sub-title--FontSize:        1.2rem;
-  --global--body--FontSize:             1rem;
-  --global--caption--FontSize:          0.8rem;
-  --global--sm--LineHeight: 1.1;
-  --global--md--LineHeight: 1.5;
-  --global--lg--LineHeight: 2;
-  --global--light--FontWeight: 300;
-  --global--regular--FontWeight: 400;
-  --global--medium--FontWeight: 500;
-  --global--bold--FontWeight: 700;
-  --global--black--FontWeight: 900;
-}
-
-@font-face {
+body {
+  font-size: var(--global--caption--FontSize);
   font-family: var(--base-font);
-  font-weight: var(--global--normal--FontWeight);
-  font-style: normal;
-  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype");
-  font-display: swap;
 }
 
-@font-face {
+a {
+  color: var(--global--white--Color);
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 2.2em;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  padding-top: 2.2em;
+}
+
+.header__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
+}
+
+.header__menu li {
+  display: inline-block;
+  color: var(--global--white--Color);
+  font-family: var(--base-font-black);
+  font-weight: var(--global--regular--FontWeight);
+  text-transform: uppercase;
+}
+
+.header__menu li + li {
+  margin-left: 4.8em;
+}
+
+.header__icon {
+  margin-left: auto;
+}
+
+.header__icon li {
+  display: inline-block;
+}
+
+.header__icon li + li {
+  margin-left: 1.5em;
+}
+
+.header__icon .icon-facebook-official:before {
+  content: "\f230";
+  font-family: 'icomoon';
+}
+
+.header__icon .icon-twitter:before {
+  content: "\f099";
+}
+
+.header__icon .icon-youtube-play:before {
+  content: "\f16a";
+}
+
+.header__icon .icon-instagram:before {
+  content: "\f16d";
+}
+
+.header__content {
+  width: 100%;
+  max-width: 346px;
+  text-align: left;
+}
+
+.header__content p {
+  color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-style: normal;
-  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype");
-  font-display: swap;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
-@font-face {
-  font-family: var(--base-font);
-  font-weight: var(--global--bold--FontWeight);
-  font-style: normal;
-  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype");
-  font-display: swap;
+.header__content h1 {
+  background-color: var(--global--extra--Color);
+  color: var(--global--white--Color);
+  font-family: var(--base-font-black);
+  font-weight: var(--global--regular--FontWeight);
+  font-size: 5.8em;
+  line-height: 70px;
+  text-transform: uppercase;
 }
 
-@font-face {
-  font-family: var(--base-font);
-  font-weight: var(--global--black--FontWeight);
-  font-style: normal;
-  src: local("Lato Black"), local("Lato-Black"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype");
-  font-display: swap;
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-screen {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  position: relative;
+}
+
+.main-screen__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

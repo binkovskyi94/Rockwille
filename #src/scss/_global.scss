@@ -1,0 +1,16 @@
+body {
+    font-size: var(--global--caption--FontSize);
+    font-family: var(--base-font);
+}
+a {
+    color: var( --global--white--Color);
+}
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+.container {
+    max-width: 1170px;
+    padding: 0 2.2em;
+    margin: 0 auto;
+}

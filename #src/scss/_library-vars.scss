@@ -2,13 +2,6 @@
 // Global variables follow the formula:
 // `--global--concept--modifier--state--PropertyCamelCase`
 
-// Подключение шрифтов
-// Google Fonts
-// http://https://fonts.google.com//
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-// Локальные шрифты
-// @import 'local-fonts';
-
 :root {
   // Ссылки
   --global--link--Color: var(--global--primary--Color);
@@ -64,7 +57,7 @@
   // --global--dark--BackgroundColor:      #292e34;
   // --global--dark--off--BackgroundColor: #393f44;
 
-  // Отправные точки(breakpoint)
+  // Контрольные точки(breakpoint)
   // http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
   --global--breakpoint--xs: 0;
   --global--breakpoint--sm: 24em;
@@ -74,19 +67,20 @@
 
   // Шрифты
   // Семейство шрифтов
-  --base-font: 'Lato';
+  --base-font: 'Lato-Regular';
+  --base-font-black: 'Lato-Black';
 
   // Системные шрифты
-  // @import 'system-fonts';
   // --global--sans-serif--FontFamily: system;
 
   // Размер шрифта
-  --global--hero-title--FontSize:       3rem;
-  --global--main-title--FontSize:       2rem;
-  --global--secondary--title-FontSize:  1.5rem;
-  --global--sub-title--FontSize:        1.2rem;
-  --global--body--FontSize:             1rem;
-  --global--caption--FontSize:          0.8rem;
+  // --global--hero-title--FontSize:       3rem;
+  // --global--main-title--FontSize:       2rem;
+  // --global--secondary--title-FontSize:  1.5rem;
+  // --global--sub-title--FontSize:        1.2rem;
+  // --global--body--FontSize:             1rem;
+  --global--caption--FontSize:          14px;
+  
 
   // Высота строки
   --global--sm--LineHeight: 1.1;
