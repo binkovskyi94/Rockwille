@@ -68,7 +68,7 @@ $minWidth: 320px;
     height: 100%;
     top: 0;
     left: 0;
-    @include flexboxinline();
+    @include flexbox();
     flex-direction: column;
 }
 .main-screen {
@@ -86,17 +86,22 @@ $minWidth: 320px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 .ibg {
     img {
         width: 100%;
-        height: 100%;
+        min-height: 980px;
         position: absolute;
         top: 0;
         left: 0;
         object-fit: cover;
     }
+}
+.content {
+    min-height: 890px;
+    padding-top: 4.3em;
+    padding-bottom: 4.1em;
+    background-color: var(--global--dark--BackgroundColor);
 }   
 
 

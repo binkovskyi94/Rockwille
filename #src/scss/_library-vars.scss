@@ -10,9 +10,9 @@
   --global--link--hover--TextDecoration: underline;
   
   // Границы
-  --global--orange--BorderColor: #fa7f6b;
-  --global--BorderWidth: 4px solid #000000;
-  --global--BorderWidth: 4px solid #ffffff;
+  --global--orange--BorderColor:  0.3em solid #cc5769;
+  // --global--BorderWidth: 4px solid #000000;
+  // --global--BorderWidth: 4px solid #ffffff;
   // --global--BorderWidth: 1px;
   // --global--dark--BorderColor: #bbb;
   // --global--light--BorderColor: #d1d1d1;
@@ -43,7 +43,7 @@
 
   // Цвет текста
   --global--white--Color:      #ffffff;
-  --global--extra--Color:      linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
+  --global--extra--Color:       linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
   // --global--dark--Color:      #292e34;
   // --global--dark--off--Color: #8b8d8f;
   // --global--light--Color:     #fafafa;

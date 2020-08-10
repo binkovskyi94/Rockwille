@@ -82,9 +82,7 @@
   --global--link--TextDecoration: none;
   --global--link--hover-Color: #0088ce;
   --global--link--hover--TextDecoration: underline;
-  --global--orange--BorderColor: #fa7f6b;
-  --global--BorderWidth: 4px solid #000000;
-  --global--BorderWidth: 4px solid #ffffff;
+  --global--orange--BorderColor:  0.3em solid #cc5769;
   --global--spacer--xxs: 0.125rem;
   --global--spacer--xs: 0.25rem;
   --global--spacer--sm: 0.5rem;
@@ -95,7 +93,7 @@
   --global--extra-primary--Color:        linear-gradient(to right, #5328a1 0%, #782e0a 100%);
   --global--orange-primary--Color:    #f97e6b;
   --global--white--Color:      #ffffff;
-  --global--extra--Color:      linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
+  --global--extra--Color:       linear-gradient(45deg, #aa3a67 0%, #fb806b 100%);
   --global--dark--BackgroundColor:      #030203;
   --global--breakpoint--xs: 0;
   --global--breakpoint--sm: 24em;
@@ -226,13 +224,13 @@ a {
   width: 100%;
   z-index: 50;
   padding-top: 2.2em;
+  padding-bottom: 20.8em;
 }
 
 .header__wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -285,8 +283,9 @@ a {
 
 .header__content {
   width: 100%;
-  max-width: 346px;
+  max-width: 360px;
   text-align: left;
+  margin-top: 17.8em;
 }
 
 .header__content p {
@@ -298,13 +297,28 @@ a {
 }
 
 .header__content h1 {
-  background-color: var(--global--extra--Color);
-  color: var(--global--white--Color);
+  color: #cc5769;
   font-family: var(--base-font-black);
   font-weight: var(--global--regular--FontWeight);
   font-size: 5.8em;
   line-height: 70px;
   text-transform: uppercase;
+  margin-top: 1.3rem;
+  margin-bottom: 1.1rem;
+}
+
+.header__content .button {
+  font-size: 1.7em;
+  border-radius: .3rem;
+  border: var(--global--orange--BorderColor);
+  padding: 1.9rem 4.4rem;
+  margin-top: 4.2rem;
+  color: var(--global--white--Color);
+  font-family: var(--base-font);
+  font-weight: var(--global--bold--FontWeight);
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
 }
 
 .page {
@@ -313,12 +327,9 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  display: -moz-inline-flex;
-  display: -ms-inline-flex;
-  display: -o-inline-flex;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -344,15 +355,21 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .ibg img {
   width: 100%;
-  height: 100%;
+  min-height: 980px;
   position: absolute;
   top: 0;
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.content {
+  min-height: 890px;
+  padding-top: 4.3em;
+  padding-bottom: 4.1em;
+  background-color: var(--global--dark--BackgroundColor);
 }
