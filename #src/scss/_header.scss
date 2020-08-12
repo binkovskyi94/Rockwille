@@ -1,18 +1,21 @@
-.header {
-    position: absolute;
-    width: 100%;
-    z-index: 50;
-    padding-top: 2.2em;
-    padding-bottom: 20.8em;
+.header__fullscreen {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding-top: 33px;
+    padding-bottom: 290px;
 }
 .header__wrapp {
     @include flexbox();
     justify-content: space-between;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 18px;
+    margin-bottom: 250px;
 }
-// .wrapp {
-// }
+.wrapp {
+}
 .header__menu {
     li {
         display: inline-block;
@@ -21,16 +24,32 @@
         text-transform: uppercase;
     }
     li + li {
-        margin-left: 4.8em;
+        margin-left: 60px;
+    }
+    .cool-link {
+        display: inline-block;
+    }
+    .cool-link::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $pink;
+        transition:var(--global-animation-hover);
+    }
+    .cool-link:hover::after {
+        width: 100%;
+        transition: var(--global-animation-hover);
     }
 }
 .header__icon {
+    font-size: 24px;
     margin-left: auto;
     li {
         display: inline-block; 
     }
     li + li {
-        margin-left: 1.5em;
+        margin-left: 20px;
     }
     .icon-facebook-official:before {
         content: "\f230";
@@ -46,6 +65,20 @@
         content: "\f16d";
     }
 }
+.header__icon ul li a {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+    transition: var( --global-animation-icon-rotate) 
+}
+.header__icon ul li:hover a { 
+    border-radius: 50%; 
+    background: $pink;  
+    transform: rotate(360deg); 
+}
 .burger__menu {
 }
 .menu {
@@ -54,32 +87,37 @@
     width: 100%;
     max-width: 360px;
     text-align: left;
-    margin-top: 17.8em;
     p {
         color: var(--global--white--Color);
         @include fl400;
-        font-size: 2em;
+        font-size: 28px;
         text-transform: uppercase;
     }
     h1 {
         color: $pink;
         @include f400;
-        font-size: 5.8em;
+        font-size: 80px;
         line-height: 70px;
         text-transform: uppercase;
-        margin-top: 1.3rem;
-        margin-bottom: 1.1rem;
+        margin-top: 20px;
+        margin-bottom: 18px;
     }
-    .button {
-        font-size: 1.7em;
-        border-radius: .3rem;
+    .btn {
+        position: relative;
+        font-size: 24px;
+        border-radius: 4px;
         border: var(--global--orange--BorderColor);
-        padding: 1.9rem 4.4rem;
-        margin-top: 4.2rem;
+        background: none;
+        padding: 30px 70px;
+        margin-top: 60px;
         color: var(--global--white--Color);
         @include fl700;
         text-transform: uppercase;
         text-align: center;
-        cursor: pointer;
+        animation: var(--global-animation-pulse);
+        &:hover {
+            animation: none;
+        }
     }
 }
+

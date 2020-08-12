@@ -6,7 +6,7 @@
 :focus,:active {outline: none;}
 a:focus,a:active {outline: none;}
 aside,nav,footer,header,section {display: block;}
-html,body {height: 100%;position: relative;min-width: $minWidth;}
+html,body {height: 100%;position:relative;min-width: $minWidth;}
 html {box-sizing: border-box;}
 body {line-height: 1;font-size: 14px;font-family: Arial, Helvetica, sans-serif;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
 input,button,textarea {font-family: var(--base-font);}

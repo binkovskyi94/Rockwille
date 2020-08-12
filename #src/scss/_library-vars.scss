@@ -3,6 +3,11 @@
 // `--global--concept--modifier--state--PropertyCamelCase`
 
 :root {
+  // Анимации
+  --global-animation-pulse: shadow-pulse 1s infinite;
+  --global-animation-hover: width .3s;
+  --global-animation-icon-rotate:  all .6s ease;
+  
   // Ссылки
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
@@ -10,7 +15,7 @@
   --global--link--hover--TextDecoration: underline;
   
   // Границы
-  --global--orange--BorderColor:  0.3em solid #cc5769;
+  --global--orange--BorderColor:  4px solid #cc5769;
   // --global--BorderWidth: 4px solid #000000;
   // --global--BorderWidth: 4px solid #ffffff;
   // --global--BorderWidth: 1px;
@@ -19,12 +24,12 @@
 
   // Отступы
   // https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62
-  --global--spacer--xxs: 0.125rem;
-  --global--spacer--xs: 0.25rem;
-  --global--spacer--sm: 0.5rem;
-  --global--spacer--md: 1rem;
-  --global--spacer--lg: 2rem;
-  --global--spacer--xl: 3rem;
+  // --global--spacer--xxs: 0.125rem;
+  // --global--spacer--xs: 0.25rem;
+  // --global--spacer--sm: 0.5rem;
+  // --global--spacer--md: 1rem;
+  // --global--spacer--lg: 2rem;
+  // --global--spacer--xl: 3rem;
 
   // Цвет
   
@@ -59,11 +64,11 @@
 
   // Контрольные точки(breakpoint)
   // http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/
-  --global--breakpoint--xs: 0;
-  --global--breakpoint--sm: 24em;
-  --global--breakpoint--md: 50;
-  --global--breakpoint--lg: 50em;
-  --global--breakpoint--xl: 73em;
+  // --global--breakpoint--xs: 0;
+  // --global--breakpoint--sm: 24em;
+  // --global--breakpoint--md: 50;
+  // --global--breakpoint--lg: 50em;
+  // --global--breakpoint--xl: 73em;
 
   // Шрифты
   // Семейство шрифтов

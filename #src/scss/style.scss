@@ -52,6 +52,7 @@ $minWidth: 320px;
 @import 'footer';
 @import 'media';
 @import 'modules';
+@import 'animation';
 @import 'ui';
 
 // </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=========================================================================================================================================================================================================================================================================
@@ -62,48 +63,10 @@ $minWidth: 320px;
 //                                                    <ОСНОВНОЙ БЛОК>
 //
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-.page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    @include flexbox();
-    flex-direction: column;
-}
-.main-screen {
-    flex: 1 0 100%;
-    position: relative;
-    &__bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
-}
-.ibg{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.ibg {
-    img {
-        width: 100%;
-        min-height: 980px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-    }
-}
 .content {
-    min-height: 890px;
-    padding-top: 4.3em;
-    padding-bottom: 4.1em;
-    background-color: var(--global--dark--BackgroundColor);
-}   
-
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 
 
