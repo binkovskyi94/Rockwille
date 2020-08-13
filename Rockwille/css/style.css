@@ -32,8 +32,8 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?qlmhwz");
-  src: url("../fonts/icomoon.eot?qlmhwz#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?qlmhwz") format("truetype"), url("../fonts/icomoon.woff?qlmhwz") format("woff"), url("../fonts/icomoon.svg?qlmhwz#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?8rxn4u");
+  src: url("../fonts/icomoon.eot?8rxn4u#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?8rxn4u") format("truetype"), url("../fonts/icomoon.woff?8rxn4u") format("woff"), url("../fonts/icomoon.svg?8rxn4u#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -53,8 +53,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-user:before {
+  content: "\f007";
+}
+
+.icon-check:before {
+  content: "\f00c";
+}
+
 .icon-map-marker:before {
   content: "\f041";
+}
+
+.icon-phone:before {
+  content: "\f095";
 }
 
 .icon-twitter:before {
@@ -83,6 +95,7 @@
   --global-animation-icon-rotate:  all .6s ease;
   --global-animation-popup-open: translate(-1000px);
   --global-animation-popup-close: translate(0px);
+  --global-animation-transition: .7s;
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
   --global--link--hover-Color: #0088ce;
@@ -377,9 +390,10 @@ a {
 .popup__fast {
   width: 290px;
   height: 432px;
-  background: #cc5769;
+  background: #e2dede;
   z-index: 100;
-  padding: 23px 0 0 27px;
+  padding: 1.43em 1.43em;
+  text-align: center;
   margin: auto;
   position: absolute;
   top: 0;
@@ -388,9 +402,10 @@ a {
   -webkit-transform: var(--global-animation-popup-open);
       -ms-transform: var(--global-animation-popup-open);
           transform: var(--global-animation-popup-open);
-  -webkit-transition: .7s;
-  -o-transition: .7s;
-  transition: .7s;
+  -webkit-transition: var(--global-animation-transition);
+  -o-transition: var(--global-animation-transition);
+  transition: var(--global-animation-transition);
+  border: var(--global--orange--BorderColor);
   border-radius: 4px;
 }
 
@@ -401,9 +416,68 @@ a {
 }
 
 .popup__fast h3 {
-  font-size: 26px;
-  color: #483c36;
-  font-weight: bold;
+  font-size: 1.86em;
+  color: #cc5769;
+  font-family: var(--base-font);
+  font-weight: var(--global--bold--FontWeight);
+}
+
+.popup__fast > p {
+  font-family: var(--base-font);
+  font-weight: var(--global--medium--FontWeight);
+  font-size: 1.29em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.popup__content .icon-check {
+  content: "\f00c";
+  font-family: 'icomoon';
+  display: inline-block;
+  color: #117d11;
+  font-size: 1.33em;
+  margin-right: 0.42em;
+}
+
+.popup__content p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.29em;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.popup__content span {
+  display: inline-block;
+  max-width: 220px;
+  width: 100%;
+}
+
+.form .form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 240px;
+  width: 100%;
+  border: 4px solid #eee;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.form .form__content input {
+  width: 100%;
+  padding: 10px;
+}
+
+.form .form__content i {
+  padding: 12px;
+  border-right: 2px solid #eee;
 }
 
 .bg__popup {
