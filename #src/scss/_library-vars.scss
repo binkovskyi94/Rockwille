@@ -6,8 +6,9 @@
   // Анимации
   --global-animation-pulse: shadow-pulse 1s infinite;
   --global-animation-hover: width .3s;
-  --global-animation-icon-rotate:  all .6s ease;
-  
+  --global-animation-icon-rotate:  all .6s ease; 
+  --global-animation-popup-open: translate(-1000px);
+  --global-animation-popup-close: translate(0px);
   // Ссылки
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;

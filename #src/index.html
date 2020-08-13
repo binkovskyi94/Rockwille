@@ -4,7 +4,24 @@
 
 <body>
  
-     <div class="wrapper">
+     <main class="wrapper">
+       <div class="popup__fast">
+         <h3>Music Festival</h3>
+         <ul>
+           <li>Send and application and you will receive</li>
+           <li><p><span>Advance Payment</span><span>the cost of your ticket</span></p></li>
+           <li><p><span>Specialist consultation</span></p></li>
+           <li><p><span>Electronic order confirmation</span></p></li>
+         </ul>
+         <div class="form">
+           <form action="">
+             <input type="text" name="name" class="input__name" placeholder="Your Name">
+             <input type="text" name="phone" class="input__phone" placeholder="Your Phone Number">
+             <button type="button" class="button">Find out the cost</button>
+           </form>
+         </div>
+       </div>
+       <div class="bg__popup"></div>
       @@include('components/_header.html')
 
       <!-- WRITE CODE HERE -->
@@ -26,7 +43,7 @@
       </section>
       <!-- STOP WRITE CODE -->
       @@include('components/_footer.html')
-     </div>
+     </main>
   @@include('components/_scripts.html')
 
 </body>
