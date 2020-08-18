@@ -25,7 +25,6 @@
     z-index: 100;
     padding: 1em 1em;
     text-align: center;
-    margin: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,6 +35,7 @@
     border-radius: $borderRadiusmin;
     &.active {
         transform: var( --global-animation-popup-close);
+        margin: auto;
     }
     h3 {
         font-size: 1.86em;
