@@ -227,7 +227,7 @@ a {
 
 .container {
   max-width: 1170px;
-  padding: 0 2.2em;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -238,8 +238,8 @@ a {
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
-  padding-top: 2.4em;
-  padding-bottom: 20.7em;
+  padding-top: 33px;
+  padding-bottom: 292px;
 }
 
 .header__wrapp {
@@ -252,11 +252,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 17.85em;
+  margin-bottom: 249px;
 }
 
 .header__menu {
-  font-size: 1.29em;
+  font-size: 18px;
 }
 
 .header__menu li {
@@ -268,7 +268,7 @@ a {
 }
 
 .header__menu li + li {
-  margin-left: 3.33em;
+  margin-left: 60px;
 }
 
 .header__menu .cool-link {
@@ -294,7 +294,7 @@ a {
 }
 
 .header__icon {
-  font-size: 1.72em;
+  font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
   margin-left: auto;
   max-width: 180px;
   width: 100%;
@@ -305,7 +305,7 @@ a {
 }
 
 .header__icon li + li {
-  margin-left: 1em;
+  margin-left: 20px;
 }
 
 .header__icon .icon-facebook-official:before {
@@ -359,7 +359,7 @@ a {
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 2em;
+  font-size: calc(22px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
 }
 
@@ -367,21 +367,21 @@ a {
   color: #cc5769;
   font-family: var(--base-font-black);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 5.72em;
-  line-height: 0.87em;
+  font-size: calc(56px + 24 * ((100vw - 320px) / (1920 - 320)));
+  line-height: 70px;
   text-transform: uppercase;
-  margin-top: 0.25em;
-  margin-bottom: 0.22em;
+  margin-top: 21px;
+  margin-bottom: 18px;
 }
 
 .header__content .btn {
   position: relative;
-  font-size: 1.71em;
+  font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
   border-radius: 4px;
   border: var(--global--orange--BorderColor);
   background: 0;
-  padding: 1.25em 2.91em;
-  margin-top: 2.5em;
+  padding: 30px 70px;
+  margin-top: 68px;
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--bold--FontWeight);
@@ -516,18 +516,18 @@ a {
 
 .content {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 57px;
   background-color: #030203;
 }
 
 .content h3 {
   font-family: var(--base-font-black);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 2.72em;
+  font-size: calc(28px + 10 * ((100vw - 320px) / (1920 - 320)));
   color: var(--global--white--Color);
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 1.58em;
+  margin-bottom: 60px;
 }
 
 .content__wrapp {
@@ -576,7 +576,6 @@ a {
   background-repeat: no-repeat;
   padding: 30px;
   background-position: center;
-  background-size: 210%;
 }
 
 .box1 {
@@ -587,11 +586,16 @@ a {
   margin-left: 15px;
 }
 
+.box__content {
+  min-height: 580px;
+  max-width: 300px;
+}
+
 .box__content h2 {
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 30px;
+  font-size: calc(24px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
   text-align: center;
 }
@@ -600,7 +604,7 @@ a {
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 30px;
+  font-size: calc(24px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
   text-align: center;
   margin-top: 214px;
@@ -616,7 +620,7 @@ a {
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--bold--FontWeight);
-  font-size: 24px;
+  font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
   background: 0;
   text-align: center;
@@ -654,10 +658,10 @@ a {
 }
 
 .content__footer-text {
-  color: #fefefe;
+  color: #a17676;
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 22px;
+  font-size: calc(20px + 2 * ((100vw - 320px) / (1920 - 320)));
   margin-top: 60px;
   text-align: center;
 }

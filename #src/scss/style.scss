@@ -32,6 +32,7 @@
 @import 'library-vars';
 @import 'vars';
 $minWidth: 320px;
+$maxWidth: 1920px;
 
 // </ПЕРЕМЕННЫЕ>=========================================================================================================================================================================================================================================================================
 
@@ -67,15 +68,15 @@ $minWidth: 320px;
 //<END SECTION CONTENT>
 .content {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 57px;
     background-color: #030203;
     h3 {
         @include f400;
-        font-size: 2.72em;
+        font-size: calc(28px + 10 * ((100vw - 320px) / (1920 - 320)));
         color: var(--global--white--Color);
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 1.58em;
+        margin-bottom: 60px;
     }
 }
 .content__wrapp {
@@ -109,7 +110,6 @@ $minWidth: 320px;
     background-repeat: no-repeat;
     padding: 30px;
     background-position: center;
-    background-size: 210%;
 }
 .box1 {
     margin-right: 15px;
@@ -118,17 +118,19 @@ $minWidth: 320px;
     margin-left: 15px;
 }
 .box__content {
+    min-height: 580px;
+    max-width: 300px;
     h2 {
         color: var(--global--white--Color);
         @include fl400;
-        font-size: 30px;
+        font-size: calc(24px + 6 * ((100vw - 320px) / (1920 - 320)));
         text-transform: uppercase;
         text-align: center;
     }
     .price__box {
         color: var(--global--white--Color);
         @include fl400;
-        font-size: 30px;
+        font-size: calc(24px + 6 * ((100vw - 320px) / (1920 - 320)));
         text-transform: uppercase;
         text-align: center;
         margin-top: 214px;
@@ -142,7 +144,7 @@ $minWidth: 320px;
         padding: 25px 0;
         color: var(--global--white--Color);
         @include fl700;
-        font-size: 24px;
+        font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
         text-transform: uppercase;
         background: 0;
         text-align: center;
@@ -174,7 +176,7 @@ $minWidth: 320px;
 .content__footer-text {
     color: $light;
     @include fl400;
-    font-size: 22px;
+    font-size: calc(20px + 2 * ((100vw - 320px) / (1920 - 320)));
     margin-top: 60px;
     text-align: center;
 }

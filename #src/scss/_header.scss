@@ -4,17 +4,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    padding-top: 2.4em;
-    padding-bottom: 20.7em;
+    padding-top: 33px;
+    padding-bottom: 292px;
 }
 .header__wrapp {
     @include flexbox();
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 17.85em;
+    margin-bottom: 249px;
 }
 .header__menu {
-    font-size: 1.29em;
+    font-size: 18px;
     li {
         display: inline-block;
         color: var(--global--white--Color);
@@ -22,7 +22,7 @@
         text-transform: uppercase;
     }
     li + li {
-        margin-left: 3.33em;
+        margin-left: 60px;
     }
     .cool-link {
         display: inline-block;
@@ -40,13 +40,8 @@
         transition: var(--global-animation-hover);
     }
 }
-@media (max-width: 960px) {
-   .header__burger {
-
-   }
-}
 .header__icon {
-    font-size: 1.72em;
+    font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
     margin-left: auto;
     max-width: 180px;
     width: 100%;
@@ -54,7 +49,7 @@
         display: inline-block; 
     }
     li + li {
-        margin-left: 1em;
+        margin-left: 20px;
     }
     .icon-facebook-official:before {
         content: "\f230";
@@ -89,29 +84,36 @@
     p {
         color: var(--global--white--Color);
         @include fl400;
-        font-size: 2em;
+        font-size: calc(22px + 6 * ((100vw - 320px) / (1920 - 320)));
         text-transform: uppercase;
     }
     h1 {
         color: $pink;
         @include f400;
-        font-size: 5.72em;
-        line-height: 0.87em;
+        font-size: calc(56px + 24 * ((100vw - 320px) / (1920 - 320)));
+        line-height: 70px;
         text-transform: uppercase;
-        margin-top: 0.25em;
-        margin-bottom: 0.22em;
+        margin-top: 21px;
+        margin-bottom: 18px;
     }
     .btn {
         position: relative;
-        font-size: 1.71em;
+        font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
         border-radius: 4px;
         border: var(--global--orange--BorderColor);
         background: 0;
-        padding: 1.25em 2.91em;
-        margin-top: 2.5em;
+        padding: 30px 70px;
+        margin-top: 68px;
         color: var(--global--white--Color);
         @include fl700;
         text-transform: uppercase;
         text-align: center;
     }
 }
+// @media (max-width: 767px) {
+//     .header__content {
+//         h1 {
+//             font-size: calc(56px + (24 + 24 * 0.7) * ((100vw - 320px )/ 1920));
+//         }
+//     }
+// }
