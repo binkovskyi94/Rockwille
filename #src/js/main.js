@@ -13,3 +13,11 @@ $(function(){
 $(window).scroll(function(){
     $('.popup__fast').css({'top': $(window).scrollTop() +100})
 }).scroll();
+
+$(function(){
+    $('.header__menu-btn').on('click', function(){          
+        $('.header__menu ul ').slideToggle();  
+    });  
+
+
+});

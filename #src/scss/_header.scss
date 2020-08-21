@@ -40,6 +40,18 @@
         transition: var(--global-animation-hover);
     }
 }
+// ---<BURGER MENU>---
+.header__menu-btn{
+    width: 30px;
+    display: none;
+}
+.header__menu-row {
+    width: 100%;
+    background-color: #000;
+    height: 4px;
+    margin-bottom: 4px;
+}
+// ---</BURGER MENU>---
 .header__icon {
     font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
     margin-left: auto;
