@@ -32,7 +32,7 @@
         display: block;
         width: 0;
         height: 2px;
-        background: $pink;
+        background: var( --global--extra--Color);
         transition:var(--global-animation-hover);
     }
     .cool-link:hover::after {
@@ -40,18 +40,18 @@
         transition: var(--global-animation-hover);
     }
 }
-// ---<BURGER MENU>---
+// ------------------------------------------------------<BURGER MENU>---------------------------------------------------------------------------------------------------------------------------------
 .header__menu-btn{
     width: 30px;
     display: none;
 }
 .header__menu-row {
     width: 100%;
-    background-color: #000;
+    background-color: $pink;
     height: 4px;
     margin-bottom: 4px;
 }
-// ---</BURGER MENU>---
+// ------------------------------------------------------</BURGER MENU>---------------------------------------------------------------------------------------------------------------------------------
 .header__icon {
     font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
     margin-left: auto;
@@ -110,6 +110,8 @@
     }
     .btn {
         position: relative;
+        max-width: 300px;
+        width: 100%;
         font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
         border-radius: 4px;
         border: var(--global--orange--BorderColor);
@@ -122,10 +124,3 @@
         text-align: center;
     }
 }
-// @media (max-width: 767px) {
-//     .header__content {
-//         h1 {
-//             font-size: calc(56px + (24 + 24 * 0.7) * ((100vw - 320px )/ 1920));
-//         }
-//     }
-// }

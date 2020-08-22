@@ -21,7 +21,7 @@
 .popup__fast {
     width: 290px;
     height: 432px;
-    background: $light-grey;
+    background: var( --global--white--Color);
     z-index: 100;
     padding: 1em 1em;
     text-align: center;
@@ -31,8 +31,7 @@
     right: 0;
     transform: var(--global-animation-popup-open);
     transition: var(--global-animation-transition);
-    border: var( --global--orange--BorderColor);
-    border-radius: $borderRadiusmin;
+    border-radius: 10px;
     &.active {
         transform: var( --global-animation-popup-close);
         margin: auto;
@@ -79,16 +78,16 @@
         display: flex;
         max-width: 240px;
         width: 100%;
-        border: var( --global--orange--BorderColor);
         align-items: center;
         margin-top: 0.72em;
         input {
             width: 100%;
             padding: 0.72em;
+            background: rgba(0, 170, 111, 0.1);
+            border-radius: 5px;
         }
         i {
             padding: 0.86em;
-            border-right: var( --global--orange--right-BorderWidth);
             color: $pink;
         }
     }
@@ -97,7 +96,7 @@
     max-width: 160px;
     width: 100%;
     padding: 0.86em 0.72em;
-    background-color: #4dab4d;
+    background-color: $pink;
     text-transform: uppercase;
     color: var(--global--white--Color);
     border-radius: $borderRadiusVeryMax;
