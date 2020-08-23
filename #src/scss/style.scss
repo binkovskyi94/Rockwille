@@ -176,7 +176,7 @@ $maxWidth: 1920px;
 }
 @media (max-width: 580px) {
     .content__wrapp {
-        display: flex;
+        @include flexbox();
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
@@ -198,6 +198,7 @@ $maxWidth: 1920px;
     padding: 30px 25px;
     background-position: center;
     border-radius: $borderRadiusmin;
+    opacity: .7;
 }
 .box1 {
     margin-right: 15px;
@@ -226,7 +227,7 @@ $maxWidth: 1920px;
         display: block;
         max-width: 300px;
         width: 100%;
-        border-radius: 4px;
+        border-radius:$borderRadiusmin;
         border: var(--global--white--BorderWidth);
         padding: 25px 0;
         color: var(--global--white--Color);
@@ -239,7 +240,7 @@ $maxWidth: 1920px;
     }
 }
 .icon-text {
-    display: flex;
+    @include flexbox();
     margin-top: 30px;
     .icon-user::before {   
         content: "\f007";

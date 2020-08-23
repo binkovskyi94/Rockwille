@@ -320,18 +320,6 @@ a {
   transition: var(--global-animation-hover);
 }
 
-.header__menu-btn {
-  width: 30px;
-  display: none;
-}
-
-.header__menu-row {
-  width: 100%;
-  background-color: #cc5769;
-  height: 4px;
-  margin-bottom: 4px;
-}
-
 .header__icon {
   font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
   margin-left: auto;
@@ -764,6 +752,7 @@ a {
   padding: 30px 25px;
   background-position: center;
   border-radius: 4px;
+  opacity: .7;
 }
 
 .box1 {

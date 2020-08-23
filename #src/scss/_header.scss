@@ -40,18 +40,6 @@
         transition: var(--global-animation-hover);
     }
 }
-// ------------------------------------------------------<BURGER MENU>---------------------------------------------------------------------------------------------------------------------------------
-.header__menu-btn{
-    width: 30px;
-    display: none;
-}
-.header__menu-row {
-    width: 100%;
-    background-color: $pink;
-    height: 4px;
-    margin-bottom: 4px;
-}
-// ------------------------------------------------------</BURGER MENU>---------------------------------------------------------------------------------------------------------------------------------
 .header__icon {
     font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
     margin-left: auto;
@@ -80,7 +68,7 @@
         font-family: 'icomoon';
     }
     & ul > li > a {   
-        display: flex;
+        @include flexbox();
         justify-content: center;
         align-items: center;
         transition: var( --global-animation-icon-rotate) 
@@ -113,7 +101,7 @@
         max-width: 300px;
         width: 100%;
         font-size: calc(18px + 6 * ((100vw - 320px) / (1920 - 320)));
-        border-radius: 4px;
+        border-radius: $borderRadiusmin;
         border: var(--global--orange--BorderColor);
         background: 0;
         padding: 30px 70px;
