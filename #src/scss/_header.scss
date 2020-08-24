@@ -32,8 +32,11 @@
         display: block;
         width: 0;
         height: 2px;
-        background: var( --global--extra--Color);
+        background: $aqua;
         transition:var(--global-animation-hover);
+        animation: line 1s;
+        color: $aqua;
+        box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
     }
     .cool-link:hover::after {
         width: 100%;
@@ -74,7 +77,8 @@
         transition: var( --global-animation-icon-rotate) 
     }
     & ul > li:hover a {  
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
+        color: aqua;
     }
 }
 .header__content {
@@ -110,5 +114,11 @@
         @include fl700;
         text-transform: uppercase;
         text-align: center;
+    }
+    .btn:hover {
+        background-color: transparent;
+        color: $aqua;
+        transition: 0.2s;
+        box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
     }
 }
