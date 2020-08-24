@@ -601,7 +601,8 @@ a {
   margin: 8px auto;
 }
 
-.button .line:nth-child(1), .button .line:nth-child(3) {
+.button .line:nth-child(1),
+.button .line:nth-child(3) {
   -webkit-transform: var(--global-animation-burger-menu-chil1);
       -ms-transform: var(--global-animation-burger-menu-chil1);
           transform: var(--global-animation-burger-menu-chil1);
