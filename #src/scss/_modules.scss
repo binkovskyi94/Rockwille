@@ -1,39 +1,38 @@
-
 // ----------------------------------------------------<POP-UP FORM>-----------------------------------------------------------------------------------------------------------------------------
 .popup__box {
     padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: var(--global-animation-popup-box);
     display: block;
     text-align: center;
-    color: black;
-    background-color: black;
-    border-radius: 5px;
+    color: var(--global--dark--BackgroundColor);
+    background-color: var(--global--dark--BackgroundColor);
+    border-radius: $borderRadiusmax;
     opacity: 80%;
     background: linear-gradient(45deg, #ff0069, #000000);
     box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.7);
 }
 .popup__box h1 {
-    color: white;
+    color: var(--global--white--Color);
     text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 24px;
+    @include fl500;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 .popup__box input {
     width: 12rem;
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: $borderRadiusmax;
     text-align: center;
     margin: auto;
     margin-bottom: 30px;
     padding: 10px;
     outline: none;
-    background: none;
-    color: white;
+    background: 0;
+    color: var(--global--white--Color);
     cursor: pointer;
     transition: 0.2s;
 }
@@ -45,19 +44,19 @@
     margin: auto;
     padding: 10px;
     outline: none;
-    background: none;
-    color: white;
+    background: 0;
+    color: var(--global--white--Color);
     text-transform: uppercase;
 }
 .popup__btn:hover {
     background-color: transparent;
-    color: aqua;
+    color: $aqua;
     transition: 0.2s;
     box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
 }
 .popup__btn:focus {
     background-color: transparent;
-    color: aqua;
+    color: $aqua;
     transition: 0.2s;
     box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
 }

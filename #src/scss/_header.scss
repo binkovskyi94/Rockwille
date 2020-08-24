@@ -1,3 +1,4 @@
+//-----------------------------------------------------<SECTION HEADER__FULLSCREEN>--------------------------------------------------------------------------------------------------------------------------------------------------
 .header__fullscreen {
     min-height: 100vh;
     background-position: center;
@@ -77,8 +78,8 @@
         transition: var( --global-animation-icon-rotate) 
     }
     & ul > li:hover a {  
-        transform: rotate(360deg);
-        color: aqua;
+        transform: var(--global-animation-icon-link);
+        color: $aqua;
     }
 }
 .header__content {
@@ -122,3 +123,4 @@
         box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
     }
 }
+//-----------------------------------------------------</SECTION HEADER__FULLSCREEN>--------------------------------------------------------------------------------------------------------------------------------------------------
