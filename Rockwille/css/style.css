@@ -865,3 +865,114 @@ a {
   margin-top: 60px;
   text-align: center;
 }
+
+.content__perfomance {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 155px;
+  padding-bottom: 135px;
+}
+
+.content__perfomance-wrapp {
+  display: block;
+  max-width: 540px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.content__perfomace-box {
+  margin-bottom: 80px;
+}
+
+.content__perfomace-box h3 {
+  color: var(--global--white--Color);
+  font-family: var(--base-font-black);
+  font-weight: var(--global--regular--FontWeight);
+  font-size: 38px;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+}
+
+.content__perfomace-box p {
+  max-width: 516px;
+  width: 100%;
+  font-family: var(--base-font);
+  font-weight: var(--global--regular--FontWeight);
+  color: var(--global--white--Color);
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.content__perfomace-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 45px;
+}
+
+.content__perfomace-item .perfomance__date {
+  position: relative;
+  margin-right: 113px;
+  color: var(--global--white--Color);
+  font-family: var(--base-font);
+  font-weight: var(--global--regular--FontWeight);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.content__perfomace-item .perfomance__date::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 100px;
+  border: 4px solid #f97e6b;
+  border-radius: 100px;
+  height: 24px;
+  width: 24px;
+}
+
+.content__perfomace-item .perfomance__date.small::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  border: 4px solid #f97e6b;
+  border-radius: 100px;
+  height: 24px;
+  width: 24px;
+}
+
+.content__perfomace-item .perfomance__text {
+  position: relative;
+  max-width: 347px;
+  width: 100%;
+  color: var(--global--white--Color);
+  font-family: var(--base-font);
+  font-weight: var(--global--regular--FontWeight);
+  font-size: 22px;
+}
+
+.content__perfomace-item .perfomance__text.line-big::before {
+  content: '';
+  position: absolute;
+  top: 38px;
+  left: -68px;
+  height: 96px;
+  width: 6px;
+  border-left: 6px solid #f97e6b;
+  border-radius: 10px;
+}
+
+.content__perfomace-item .perfomance__text.line::before {
+  content: '';
+  position: absolute;
+  top: 33px;
+  left: -68px;
+  height: 85px;
+  width: 6px;
+  border-left: 6px solid #f97e6b;
+  border-radius: 10px;
+}
