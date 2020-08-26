@@ -55,10 +55,10 @@ $maxWidth: 1920px;
 @import 'global';
 @import 'header';
 @import 'footer';
-@import 'media';
 @import 'modules';
 @import 'animation';
 @import 'ui';
+@import 'media';
 // </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>=========================================================================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
@@ -191,29 +191,10 @@ $maxWidth: 1920px;
 
 .content__wrapp {
   @include flexbox();
-  justify-content: space-between;
   align-items: center;
   max-width: 730px;
   min-height: 580px;
   margin: 0 auto;
-}
-
-@media (max-width: 580px) {
-  .content__wrapp {
-    @include flexbox();
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    .box1 {
-      margin-right: 0px;
-    }
-
-    .box2 {
-      margin-left: 0px;
-      margin-top: 30px;
-    }
-  }
 }
 
 .box {
@@ -306,6 +287,7 @@ $maxWidth: 1920px;
   margin-top: 60px;
   text-align: center;
 }
+
 //</END SECTION CONTENT>
 .content__perfomance {
   background-position: center;
@@ -315,6 +297,7 @@ $maxWidth: 1920px;
   padding-top: 155px;
   padding-bottom: 135px;
 }
+
 .content__perfomance-wrapp {
   display: block;
   max-width: 540px;
@@ -322,8 +305,9 @@ $maxWidth: 1920px;
   margin-left: auto;
 }
 
-.content__perfomace-box {
+.content__perfomance-box {
   margin-bottom: 80px;
+
   h3 {
     color: var(--global--white--Color);
     @include f400;
@@ -342,7 +326,7 @@ $maxWidth: 1920px;
   }
 }
 
-.content__perfomace-item {
+.content__perfomance-item {
   @include flexbox();
   padding-bottom: 45px;
   .perfomance__date {
