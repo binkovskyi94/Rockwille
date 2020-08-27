@@ -37,7 +37,6 @@
         transition:var(--global-animation-hover);
         animation: line 1s;
         color: $aqua;
-        box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
     }
     .cool-link:hover::after {
         width: 100%;

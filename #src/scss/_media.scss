@@ -64,7 +64,13 @@
         .perfomance__text {
             width: 100%;
         }
-    }  
+    }
+    .content__perfomance-item .perfomance__text.line::before {
+        display: none;
+    }
+    .content__perfomance-item .perfomance__text.line-big::before {
+        display: none;
+    }
 }
 
 // ------------------------------------------------------------</BURGER MENU>---------------------------------------------------------------------------------------------------------------------------------

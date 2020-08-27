@@ -390,6 +390,25 @@ $maxWidth: 1920px;
     font-size: 38px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 60px;
+  }
+  .btn-gallery {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border: var(--global--white--BorderColor);
+    color: var(--global--white--Color);
+    font-family: var(--base-font);
+    font-weight: var(--global--bold--FontWeight);
+    font-size: 24px;
+    text-transform: uppercase;
+    background: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    margin-top: 61px;
   }
 }
 .gallery__box {
