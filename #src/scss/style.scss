@@ -69,7 +69,6 @@ $maxWidth: 1920px;
 //
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // ----------------------------------------------------<BURGER MENU>-------------------------------------------------------------------------------------------------------------------------------------
-
 /*-------------- the open button ---------*/
 .button {
   display: none;
@@ -105,7 +104,6 @@ $maxWidth: 1920px;
   transform: var(--global-animation-burger-menu-btn);
   transition: var(--global-animation-burger-menu-chil2);
 }
-
 /*-------------- the close button ---------*/
 .close .line:nth-child(1) {
   transform: var(--global-animation-burger-menu-close-child1);
@@ -119,7 +117,6 @@ $maxWidth: 1920px;
   transform: var(--global-animation-burger-menu-close-child2);
   opacity: -1;
 }
-
 /*---------------- menu -----------*/
 .menu {
   display: none;
@@ -171,14 +168,13 @@ $maxWidth: 1920px;
 .nav_is_visible .menu {
   transform: var(--global-animation-burger-menu-animation-visible2);
 }
-
 // -----------------------------------------------------</BURGER MENU>-------------------------------------------------------------------------------------------------------------------------------------  
-//<END SECTION CONTENT>
+// =============================================================================================================================================================================================================
+// -----------------------------------------------------<SECTION CONTENT>-------------------------------------------------------------------------------------------------------------------------------------  
 .content {
   padding-top: 60px;
   padding-bottom: 57px;
   background-color: var(--global--dark--BackgroundColor);
-
   h3 {
     @include f400;
     font-size: calc(28px + 10 * ((100vw - 320px) / (1920 - 320)));
@@ -219,7 +215,6 @@ $maxWidth: 1920px;
 
 .box__content {
   max-width: 300px;
-
   h2 {
     color: var(--global--white--Color);
     @include fl400;
@@ -236,7 +231,6 @@ $maxWidth: 1920px;
     text-align: center;
     margin-top: 214px;
   }
-
   .btn__box {
     display: block;
     max-width: 300px;
@@ -257,14 +251,12 @@ $maxWidth: 1920px;
 .icon-text {
   @include flexbox();
   margin-top: 30px;
-
   .icon-user::before {
     content: "\f007";
     font-family: 'icomoon';
     color: var(--global--white--Color);
     margin-left: 44px;
   }
-
   p {
     color: var(--global--white--Color);
     @include fl400;
@@ -287,8 +279,9 @@ $maxWidth: 1920px;
   margin-top: 60px;
   text-align: center;
 }
-
-//</END SECTION CONTENT>
+// -----------------------------------------------------</END SECTION CONTENT>-------------------------------------------------------------------------------------------------------------------------------------
+// =============================================================================================================================================================================================================
+// -----------------------------------------------------<SECTION CONTENT__PERFOMANCE>-------------------------------------------------------------------------------------------------------------------------------------    
 .content__perfomance {
   background-position: center;
   background-repeat: no-repeat;
@@ -307,7 +300,6 @@ $maxWidth: 1920px;
 
 .content__perfomance-box {
   margin-bottom: 80px;
-
   h3 {
     color: var(--global--white--Color);
     @include f400;
@@ -315,7 +307,6 @@ $maxWidth: 1920px;
     text-transform: uppercase;
     padding-bottom: 60px;
   }
-
   p {
     max-width: 516px;
     width: 100%;
@@ -342,7 +333,7 @@ $maxWidth: 1920px;
     position: absolute;
     top: 5px;
     left: 100px;
-    border: 4px solid #f97e6b;
+    border: var(--global--orange--BordertWidth);
     border-radius: 100px;
     height: 24px;
     width: 24px;
@@ -352,7 +343,7 @@ $maxWidth: 1920px;
     position: absolute;
     top: 10px;
     left: 100px;
-    border: 4px solid #f97e6b;
+    border: var(--global--orange--BordertWidth);
     border-radius: 100px;
     height: 24px;
     width: 24px;
@@ -372,7 +363,7 @@ $maxWidth: 1920px;
     left: -68px;
     height: 96px;
     width: 6px;
-    border-left: 6px solid #f97e6b;
+    border-left: var(--global--white--BorderLeftWidth);
     border-radius: 10px;
   }
   .perfomance__text.line::before {
@@ -382,18 +373,27 @@ $maxWidth: 1920px;
     left: -68px;
     height: 85px;
     width: 6px;
-    border-left: 6px solid #f97e6b;
+    border-left: var(--global--white--BorderLeftWidth);
     border-radius: 10px;
   }
 }
-
+// -----------------------------------------------------</SECTION CONTENT__PERFOMANCE>-------------------------------------------------------------------------------------------------------------------------------------
+// ===========================================================================================================================================================================================================================
+// ------------------------------------------------------------<SECTION GALLERY>-------------------------------------------------------------------------------------------------------------------------------------        
 .gallery {
-  background-color: #000;
+  background-color: var(--global--dark--BackgroundColor);
   padding-top: 61px;
   padding-bottom: 61px;
+  h3 {
+    color: var( --global--white--Color);
+    @include fl400;
+    font-size: 38px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 .gallery__box {
-  display: flex;
+  @include flexbox();
   flex-wrap: wrap;
 }
 .gallery__content {
@@ -404,8 +404,7 @@ $maxWidth: 1920px;
     object-fit: cover;
   }
 }
-
-
+// --------------------------------------------------------</GALLERY>-------------------------------------------------------------------------------------------------------------------------------------    
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================

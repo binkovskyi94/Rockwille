@@ -1016,6 +1016,14 @@ a {
   padding-bottom: 61px;
 }
 
+.gallery h3 {
+  color: #ffffff;
+  font-family: "Lato - Black";
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .gallery__box {
   display: -webkit-box;
   display: -ms-flexbox;
