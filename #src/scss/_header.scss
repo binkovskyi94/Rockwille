@@ -90,6 +90,7 @@
         @include fl400;
         font-size: calc(22px + 6 * ((100vw - 320px) / (1920 - 320)));
         text-transform: uppercase;
+        line-height: 22px;
     }
     h1 {
         color: $pink;

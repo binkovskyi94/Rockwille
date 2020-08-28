@@ -398,6 +398,7 @@ a {
   font-weight: var(--global--regular--FontWeight);
   font-size: calc(22px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
+  line-height: 22px;
 }
 
 .header__content h1 {
@@ -887,6 +888,8 @@ a {
   font-weight: var(--global--regular--FontWeight);
   font-size: 16px;
   margin-left: 8px;
+  max-width: 188px;
+  width: 100%;
 }
 
 .box__text {
@@ -895,6 +898,8 @@ a {
   font-weight: var(--global--regular--FontWeight);
   font-size: 12px;
   margin-top: 30px;
+  max-width: 282px;
+  width: 100%;
 }
 
 .content__footer-text {
@@ -904,6 +909,8 @@ a {
   font-size: calc(20px + 2 * ((100vw - 320px) / (1920 - 320)));
   margin-top: 60px;
   text-align: center;
+  max-width: 1095px;
+  width: 100%;
 }
 
 .content__perfomance {
@@ -1071,4 +1078,42 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.location {
+  padding-bottom: 61px;
+}
+
+.location__wrapp {
+  position: relative;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.location__wrapp iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 979px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.location__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 980px;
+  width: 100%;
+  min-height: 238px;
+  padding-top: 48px;
+  padding-bottom: 49px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 0.85;
 }
