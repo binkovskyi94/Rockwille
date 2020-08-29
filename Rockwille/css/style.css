@@ -1080,18 +1080,15 @@ a {
      object-fit: cover;
 }
 
-.location {
-  padding-bottom: 61px;
-}
-
-.location__wrapp {
-  position: relative;
+.location__wrapp,
+#map {
+  max-width: 100%;
   width: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  height: 979px;
 }
 
-.location__wrapp iframe {
+.location__wrapp iframe,
+#map iframe {
   max-width: 100%;
   width: 100%;
   height: 979px;
@@ -1100,20 +1097,4 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-}
-
-.location__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 980px;
-  width: 100%;
-  min-height: 238px;
-  padding-top: 48px;
-  padding-bottom: 49px;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  background-color: #ffffff;
-  opacity: 0.85;
 }
