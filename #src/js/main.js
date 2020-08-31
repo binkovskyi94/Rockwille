@@ -62,7 +62,7 @@ function initMap() {
     let pos = {lat: 35.257733, lng: -80.849192};
     let opt = {
         center: pos,
-        zoom: 10,
+        zoom: 9,
         styles: [
           {
             "elementType": "geometry",
@@ -254,10 +254,10 @@ function initMap() {
   let myMap = new google.maps.Map(document.getElementById("map"), opt);
 
   let marker = new google.maps.Marker({
-      position: {lat: 35.257733, lng: -80.849192},
+      position: {lat: 34.898688, lng: -80.739192},
       map: myMap,
       title: "Music Festival",
-      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      icon: 'images/marker.png'
   });
 
 
