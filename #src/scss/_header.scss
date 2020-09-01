@@ -43,7 +43,7 @@
         transition: var(--global-animation-hover);
     }
 }
-.header__icon {
+.social__icon {
     font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
     margin-left: auto;
     max-width: 180px;

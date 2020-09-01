@@ -329,42 +329,42 @@ a {
   transition: var(--global-animation-hover);
 }
 
-.header__icon {
+.social__icon {
   font-size: calc(20px + 4 * ((100vw - 320px) / (1920 - 320)));
   margin-left: auto;
   max-width: 180px;
   width: 100%;
 }
 
-.header__icon li {
+.social__icon li {
   display: inline-block;
 }
 
-.header__icon li + li {
+.social__icon li + li {
   margin-left: 20px;
 }
 
-.header__icon .icon-facebook-official:before {
+.social__icon .icon-facebook-official:before {
   content: "\f230";
   font-family: 'icomoon';
 }
 
-.header__icon .icon-twitter:before {
+.social__icon .icon-twitter:before {
   content: "\f099";
   font-family: 'icomoon';
 }
 
-.header__icon .icon-youtube-play:before {
+.social__icon .icon-youtube-play:before {
   content: "\f16a";
   font-family: 'icomoon';
 }
 
-.header__icon .icon-instagram:before {
+.social__icon .icon-instagram:before {
   content: "\f16d";
   font-family: 'icomoon';
 }
 
-.header__icon ul > li > a {
+.social__icon ul > li > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +379,7 @@ a {
   transition: var(--global-animation-icon-rotate);
 }
 
-.header__icon ul > li:hover a {
+.social__icon ul > li:hover a {
   -webkit-transform: var(--global-animation-icon-link);
       -ms-transform: var(--global-animation-icon-link);
           transform: var(--global-animation-icon-link);
@@ -437,6 +437,55 @@ a {
   transition: 0.2s;
   -webkit-box-shadow: 0px 0px 20px 3px #00ffe0;
           box-shadow: 0px 0px 20px 3px #00ffe0;
+}
+
+.footer {
+  padding-top: 61px;
+  padding-bottom: 59px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5328a1), to(#782e0a));
+  background-image: -o-linear-gradient(left, #5328a1 0%, #782e0a 100%);
+  background-image: linear-gradient(to right, #5328a1 0%, #782e0a 100%);
+}
+
+.footer__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__content h3 {
+  max-width: 130px;
+  width: 100%;
+  color: var(--global--white--Color);
+  font-family: var(--base-font-black);
+  font-weight: var(--global--regular--FontWeight);
+  font-size: 29px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: -0.38px;
+}
+
+.footer__content p {
+  max-width: 330px;
+  width: 100%;
+  color: var(--global--white--Color);
+  font-family: var(--base-font);
+  font-weight: var(--global--regular--FontWeight);
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.footer-icon {
+  padding-bottom: 45px;
 }
 
 .popup__box {
@@ -643,6 +692,27 @@ a {
   }
   .content__perfomance-item .perfomance__text.line-big::before {
     display: none;
+  }
+  .footer__content {
+    display: block;
+    margin: auto;
+  }
+  .footer__content h3 {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .footer__content p {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+  .footer-icon {
+    display: block;
+    padding-bottom: 45px;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 0;
   }
 }
 
@@ -1080,21 +1150,43 @@ a {
      object-fit: cover;
 }
 
-.location__wrapp,
-#map {
-  max-width: 100%;
+.location__wrapp {
+  position: relative;
   width: 100%;
-  height: 979px;
+  min-height: 979px;
 }
 
-.location__wrapp iframe,
-#map iframe {
-  max-width: 100%;
+.location__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 980px;
   width: 100%;
-  height: 979px;
-  background-position: center;
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-size: cover;
+  min-height: 238px;
+  padding-top: 48px;
+  padding-bottom: 49px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+  opacity: 0.85;
+  z-index: 99999;
+}
+
+.gmnoprint {
+  display: none;
+}
+
+.gm-control-active.gm-fullscreen-control {
+  display: none;
+}
+
+.gm-style-cc {
+  display: none;
 }

@@ -71,6 +71,27 @@
     .content__perfomance-item .perfomance__text.line-big::before {
         display: none;
     }
+    .footer__content {
+        display: block;
+        margin: auto;
+    }
+    .footer__content h3 {
+        width: 100%;
+        max-width: none; 
+        text-align: center;
+    }
+    .footer__content p {
+        width: 100%; 
+        max-width: none;
+        text-align: center;
+    }
+    .footer-icon {
+        display: block;
+        padding-bottom: 45px;
+        width: 100%;
+        text-align: center;
+        margin: 30px auto 0;
+    }
 }
 
 // ------------------------------------------------------------</BURGER MENU>---------------------------------------------------------------------------------------------------------------------------------
