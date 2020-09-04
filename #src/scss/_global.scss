@@ -1,9 +1,6 @@
 body {
     font-size: var(--global--caption--FontSize);
     font-family: var(--base-font);
-    background: linear-gradient(45deg,#ff0069,#000);
-    transform: translateX(0px);
-    transition: transform 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 html {
     overflow-x: hidden;
