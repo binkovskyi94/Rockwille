@@ -20,15 +20,13 @@ $(function(){
       $('. menu-burger').removeClass('open');
     });
 
+    $(window).scroll(function(){
+
+      $('.popup__fast').css({'top': $(window).scrollTop() +100})
+  
+  }).scroll();  
+
 });
-
-$(window).scroll(function(){
-
-    $('.popup__fast').css({'top': $(window).scrollTop() +100})
-
-}).scroll();
-
-
 
 function initMap() {
     let pos = {lat: 35.257733, lng: -80.849192};
@@ -231,6 +229,5 @@ function initMap() {
       title: "Music Festival",
       icon: 'images/marker.png'
   });
-
 
 }

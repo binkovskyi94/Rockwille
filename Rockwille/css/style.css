@@ -96,22 +96,15 @@
   --global-animation-popup-open: translate(-1000px);
   --global-animation-popup-close: translate(0px);
   --global-animation-transition: .7s;
-  --global-animation-burger-menu-chil1: rotate(0deg) translateY(0);
-  --global-animation-burger-menu-chil3: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --global-animation-burger-menu-btn: translateX(0);
-  --global-animation-burger-menu-chil2: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --global-animation-burger-menu-close-child1: rotate(45deg) translateY(15px);
-  --global-animation-burger-menu-close-child3: rotate(-45deg) translateY(-15px);
-  --global-animation-burger-menu-close-child2: translateX(-100px);
-  --global-animation-burger-menu-menu: translateX(-150%);
-  --global-animation-burger-menu-animation: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --global-animation-burger-menu-animation-child1: translateX(0px);
-  --global-animation-burger-menu-animation-child2: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --global-animation-burger-menu-animation-child3: translateX(20px);
-  --global-animation-burger-menu-animation-visible1: translateX(210px);
-  --global-animation-burger-menu-animation-visible2: translateX(-75%);
   --global-animation-popup-box: translate(-50%, -50%);
   --global-animation-icon-link: rotate(360deg);
+  --global-animation-burger-menu-animation: 650ms cubic-bezier(1,0,0,1);
+  --global-animation-menu-togler: transform 650ms ease-out;
+  --global-animation-bar-start: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  --global-animation-bar-end: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  --global-animation-menu-toggler-open: rotate(-45deg);
+  --global-animation-open-bar-start: rotate(-450deg) translateX( .8rem);
+  --global-animation-open-bar-end: rotate(-450deg) translateX(-.8rem);
   --global--link--Color: var(--global--primary--Color);
   --global--link--TextDecoration: none;
   --global--link--hover-Color: #0088ce;
@@ -122,6 +115,9 @@
   --global--white--BorderLeftWidth: 6px solid #f97e6b;
   --global--orange--BordertWidth: 4px solid #f97e6b;
   --global--white--BorderColor: 4px solid #ffffff;
+  --global--border-bottom-right-radius: 100%;
+  --border--bottom-left-radius: 100%;
+  --border--bar: 12px;
   --global--primary--Color: linear-gradient(to top, #5600ea 0%, #8a00ff 100%);
   --global--extra-primary--Color: linear-gradient(to right, #5328a1 0%, #782e0a 100%);
   --global--orange-primary--Color:#f97e6b;
@@ -173,6 +169,7 @@ html {
 
 body {
   height: 100%;
+  overflow-x: hidden;
   line-height: 1;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -229,10 +226,6 @@ body {
   font-family: var(--base-font);
 }
 
-html {
-  overflow-x: hidden;
-}
-
 a {
   color: var(--global--white--Color);
 }
@@ -263,25 +256,6 @@ a {
      object-fit: cover;
   padding-top: 33px;
   padding-bottom: 292px;
-}
-
-.menu-burger {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: -100vh;
-  z-index: 50;
-  background-color: #000;
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
-  -webkit-transition: 650ms cubic-bezier(1, 0, 0, 1);
-  -o-transition: 650ms cubic-bezier(1, 0, 0, 1);
-  transition: 650ms cubic-bezier(1, 0, 0, 1);
-}
-
-.menu-burger.open {
-  top: 0;
-  border-radius: initial;
 }
 
 .header__wrapp {
@@ -407,7 +381,6 @@ a {
   font-weight: var(--global--regular--FontWeight);
   font-size: calc(22px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
-  line-height: 22px;
 }
 
 .header__content h1 {
@@ -446,85 +419,6 @@ a {
   transition: 0.2s;
   -webkit-box-shadow: 0px 0px 20px 3px #00ffe0;
           box-shadow: 0px 0px 20px 3px #00ffe0;
-}
-
-.menu-toggler {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 57px;
-  height: 38px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  cursor: pointer;
-  z-index: 1500;
-  -webkit-transition: -webkit-transform 650ms ease-out;
-  transition: -webkit-transform 650ms ease-out;
-  -o-transition: transform 650ms ease-out;
-  transition: transform 650ms ease-out;
-  transition: transform 650ms ease-out, -webkit-transform 650ms ease-out;
-}
-
-.menu-toggler .bar {
-  background-color: #fff;
-  width: 100%;
-  height: 4px;
-  border-radius: 12px;
-}
-
-.menu-toggler .bar.half {
-  width: 50%;
-}
-
-.menu-toggler .bar.start {
-  -webkit-transform-origin: right;
-      -ms-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  -o-transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.menu-toggler .bar.end {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-transform-origin: left;
-      -ms-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transition: -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  -o-transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-  transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57), -webkit-transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-}
-
-.menu-toggler.open {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  position: fixed;
-}
-
-.open .bar.start {
-  -webkit-transform: rotate(-450deg) translateX(0.8rem);
-      -ms-transform: rotate(-450deg) translateX(0.8rem);
-          transform: rotate(-450deg) translateX(0.8rem);
-}
-
-.open .bar.end {
-  -webkit-transform: rotate(-450deg) translateX(-0.8rem);
-      -ms-transform: rotate(-450deg) translateX(-0.8rem);
-          transform: rotate(-450deg) translateX(-0.8rem);
 }
 
 .footer {
@@ -701,14 +595,112 @@ a {
 }
 
 @media (max-width: 980px) {
-  .header__wrapp .button {
-    display: block;
+  .header__menu {
+    position: absolute;
+    top: 30%;
+    font-family: var(--base-font-black);
+    font-weight: var(--global--regular--FontWeight);
   }
-  .header__wrapp .menu {
+  .header__menu li {
     display: block;
+    color: var(--global--white--Color);
+    font-family: var(--base-font-black);
+    font-weight: var(--global--regular--FontWeight);
+    text-transform: uppercase;
+    text-align: center;
   }
-  .header__wrapp .header__menu ul {
-    display: none;
+  .header__menu li + li {
+    margin-left: 0;
+    margin-top: 60px;
+  }
+  .menu-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -100vh;
+    left: 0;
+    z-index: 50;
+    background: var(--global--extra--Color);
+    border-bottom-right-radius: var(--global--border-bottom-right-radius);
+    border-bottom-left-radius: var(--border--bottom-left-radius);
+    -webkit-transition: var(--global-animation-burger-menu-animation);
+    -o-transition: var(--global-animation-burger-menu-animation);
+    transition: var(--global-animation-burger-menu-animation);
+  }
+  .menu-burger.open {
+    top: 0;
+    border-radius: initial;
+  }
+  .menu-toggler {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    width: 57px;
+    height: 38px;
+    cursor: pointer;
+    z-index: 1500;
+    -webkit-transition: var(--global-animation-menu-togler);
+    -o-transition: var(--global-animation-menu-togler);
+    transition: var(--global-animation-menu-togler);
+  }
+  .menu-toggler .bar {
+    background-color: var(--global--white--Color);
+    width: 100%;
+    height: 4px;
+    border-radius: var(--border--bar);
+  }
+  .menu-toggler .bar.half {
+    width: 50%;
+  }
+  .menu-toggler .bar.start {
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: var(--global-animation-bar-start);
+    -o-transition: var(--global-animation-bar-start);
+    transition: var(--global-animation-bar-start);
+  }
+  .menu-toggler .bar.end {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: var(--global-animation-bar-end);
+    -o-transition: var(--global-animation-bar-end);
+    transition: var(--global-animation-bar-end);
+  }
+  .menu-toggler.open {
+    position: fixed;
+    -webkit-transform: var(--global-animation-menu-toggler-open);
+        -ms-transform: var(--global-animation-menu-toggler-open);
+            transform: var(--global-animation-menu-toggler-open);
+  }
+  .open .bar.start {
+    -webkit-transform: var(--global-animation-open-bar-start);
+        -ms-transform: var(--global-animation-open-bar-start);
+            transform: var(--global-animation-open-bar-start);
+  }
+  .open .bar.end {
+    -webkit-transform: var(--global-animation-open-bar-end);
+        -ms-transform: var(--global-animation-open-bar-end);
+            transform: var(--global-animation-open-bar-end);
   }
 }
 

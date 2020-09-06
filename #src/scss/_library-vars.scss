@@ -11,22 +11,15 @@
   --global-animation-popup-open: translate(-1000px);
   --global-animation-popup-close: translate(0px); 
   --global-animation-transition: .7s;
-  --global-animation-burger-menu-chil1: rotate(0deg) translateY(0);
-  --global-animation-burger-menu-chil3: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);  
-  --global-animation-burger-menu-btn: translateX(0);   
-  --global-animation-burger-menu-chil2: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);  
-  --global-animation-burger-menu-close-child1: rotate(45deg) translateY(15px);
-  --global-animation-burger-menu-close-child3: rotate(-45deg) translateY(-15px); 
-  --global-animation-burger-menu-close-child2: translateX(-100px);  
-  --global-animation-burger-menu-menu: translateX(-150%); 
-  --global-animation-burger-menu-animation: transform 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); 
-  --global-animation-burger-menu-animation-child1: translateX(0px); 
-  --global-animation-burger-menu-animation-child2: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55); 
-  --global-animation-burger-menu-animation-child3: translateX(20px);  
-  --global-animation-burger-menu-animation-visible1: translateX(210px); 
-  --global-animation-burger-menu-animation-visible2: translateX(-75%);
   --global-animation-popup-box: translate(-50%, -50%); 
   --global-animation-icon-link: rotate(360deg);
+  --global-animation-burger-menu-animation: 650ms cubic-bezier(1,0,0,1);
+  --global-animation-menu-togler: transform 650ms ease-out;
+  --global-animation-bar-start: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  --global-animation-bar-end: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  --global-animation-menu-toggler-open: rotate(-45deg);   
+  --global-animation-open-bar-start: rotate(-450deg) translateX( .8rem); 
+  --global-animation-open-bar-end: rotate(-450deg) translateX(-.8rem);
   //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
@@ -45,6 +38,9 @@
   --global--white--BorderLeftWidth: 6px solid #f97e6b;
   --global--orange--BordertWidth: 4px solid #f97e6b;
   --global--white--BorderColor: 4px solid #ffffff;
+  --global--border-bottom-right-radius: 100%;
+  --border--bottom-left-radius: 100%;
+  --border--bar: 12px;
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
