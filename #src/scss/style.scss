@@ -337,27 +337,53 @@ $maxWidth: 1920px;
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
 //============================================================================================================================================================================================================================
+
+.location {
+  position: relative;
+}
 .location__wrapp {
   position: relative;
   width: 100%;
   min-height: 979px;
 }
-.location__content {
+.location__box {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  max-width: 980px;
-  width: 100%;
+  bottom: 0;
+  margin: 0 auto 60px;
+  right: 0;
   min-height: 238px;
-  padding-top: 48px;
-  padding-bottom: 49px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  width: 82%;
+  left: 0;
+  max-width: 980px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
   border-radius: 5px;
-  background-color: #ffffff;
-  opacity: 0.85;
-  z-index: 99999;
+  background-color: #fff;
+  opacity: .85;
+}
+.location__content {
+  padding: 50px 74px;
+}
+.location__title {
+  color: #000000;
+  @include f400;
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.location__text {
+  max-width: 834px;
+  width: 100%;
+  color: #000000;
+  @include fl400;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 22px;
+  p {
+    color: #424242;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 .gmnoprint {
   display: none;
