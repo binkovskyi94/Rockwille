@@ -102,7 +102,11 @@ $maxWidth: 1920px;
   padding: 30px 25px;
   background-position: center;
   border-radius: $borderRadiusmin;
-  opacity: .7;
+  opacity: .4;
+  &:hover {
+    opacity: 1;
+    transition: all .3s;
+  }
 }
 
 .box1 {
@@ -361,7 +365,7 @@ $maxWidth: 1920px;
   opacity: .85;
 }
 .location__content {
-  padding: 50px 74px;
+  padding: 48px 74px;
 }
 .location__title {
   color: #000000;
@@ -376,7 +380,7 @@ $maxWidth: 1920px;
   color: #000000;
   @include fl400;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 32px;
   text-align: center;
   margin-top: 22px;
   p {
