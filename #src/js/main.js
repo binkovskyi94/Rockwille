@@ -17,12 +17,12 @@ $(function(){
     
     $('.menu-burger .cool-link').on('click', function(){
       $('.menu-toggler').removeClass('open');
-      $('. menu-burger').removeClass('open');
+      $('.menu-burger').removeClass('open');
     });
 
     $(window).scroll(function(){
 
-      $('.popup__fast').css({'top': $(window).scrollTop() +100})
+      $('.popup__fast').css({'top': $(window).scrollTop() +100});
   
   }).scroll();  
 
