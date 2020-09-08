@@ -149,6 +149,12 @@ $maxWidth: 1920px;
     background: 0;
     text-align: center;
     margin-top: 40px;
+    &:hover {
+      background-color: transparent;
+      color: $aqua;
+      transition: 0.2s;
+      box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
+    }
   }
 }
 
@@ -164,7 +170,7 @@ $maxWidth: 1920px;
   p {
     color: var(--global--white--Color);
     @include fl400;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 8px;
     max-width: 188px;
     width: 100%;
@@ -174,8 +180,9 @@ $maxWidth: 1920px;
 .box__text {
   color: var(--global--white--Color);
   @include fl400;
-  font-size: 12px;
-  margin-top: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 20px;
   max-width: 282px;
   width: 100%;
 }
@@ -265,6 +272,7 @@ $maxWidth: 1920px;
     color: var(--global--white--Color);
     @include fl400;
     font-size: 22px;
+    line-height: 24px;
   }
   .perfomance__text.line-big::before {
     content: '';
@@ -319,6 +327,12 @@ $maxWidth: 1920px;
     padding-bottom: 25px;
     margin: 0 auto;
     margin-top: 61px;
+    &:hover {
+      background-color: transparent;
+      color: $aqua;
+      transition: 0.2s;
+      box-shadow: 0px 0px 20px 3px rgb(0, 255, 224);
+    }
   }
 }
 .gallery__box {

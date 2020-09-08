@@ -381,6 +381,7 @@ a {
   font-weight: var(--global--regular--FontWeight);
   font-size: calc(22px + 6 * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
+  line-height: 36px;
 }
 
 .header__content h1 {
@@ -918,6 +919,16 @@ a {
   margin-top: 40px;
 }
 
+.box__content .btn__box:hover {
+  background-color: transparent;
+  color: aqua;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 20px 3px #00ffe0;
+          box-shadow: 0px 0px 20px 3px #00ffe0;
+}
+
 .icon-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -936,7 +947,7 @@ a {
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 8px;
   max-width: 188px;
   width: 100%;
@@ -946,8 +957,9 @@ a {
   color: var(--global--white--Color);
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
-  font-size: 12px;
-  margin-top: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 20px;
   max-width: 282px;
   width: 100%;
 }
@@ -1050,6 +1062,7 @@ a {
   font-family: var(--base-font);
   font-weight: var(--global--regular--FontWeight);
   font-size: 22px;
+  line-height: 24px;
 }
 
 .content__perfomance-item .perfomance__text.line-big::before {
@@ -1107,6 +1120,16 @@ a {
   padding-bottom: 25px;
   margin: 0 auto;
   margin-top: 61px;
+}
+
+.gallery .btn-gallery:hover {
+  background-color: transparent;
+  color: aqua;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 20px 3px #00ffe0;
+          box-shadow: 0px 0px 20px 3px #00ffe0;
 }
 
 .gallery__box {
